@@ -1,7 +1,40 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <script type='text/javascript' src='./lib/p5.min.js'></script>
-    <script type='text/javascript' src='Heartbreaker.js'></script>
-    <script type='text/javascript' src='Sword.js'></script>
-    <script type='text/javascript' src='Fruit.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+
 </head>
+<style>
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        max-width: 500px;
+        margin: auto;
+    }
+    span {
+        color: red;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    }
+</style>
+<body>
+    <main>
+
+        <h1>Don't fall in love!</h1>
+        <p>Use the mouse <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=" alt="cursor hand"> to break as many hearts as possible!</p>
+        <p>Don't miss any hearts or you'll lose a life!</p>
+        <p>And dont hit the <span>bright red hearts</span> or you'll fall in love and lose the game!</p>
+            
+    
+        <a class="nes-btn" style="background-color: #ffaccc;" href="game.html">Start!</a>
+    </main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-class Fruit {
+class Heart {
     constructor(x,y,size,color,bad) {
         this.position = createVector(x,y);
         this.color = color;
@@ -54,17 +54,17 @@ class Fruit {
 
     }
 
-    randomFruit() {
+    randomHeart() {
         var x = random(width);
         var y = height;
         var size = noise(frameCount) * 20 + 20;
-        var bad = (random() > BAD_FRUIT_PROBABILITY);
+        var bad = (random() > BAD_HEART_PROBABILITY);
         var r = (bad) ? 225 : 255;
         var g = (bad) ? 0 : noise(frameCount * 2) * 255;
         var b = (bad) ? 0 : noise(frameCount * 3) * 255;
         var col = color(r,g,b);
         
-        return new Fruit(x,y,size,col,bad);
+        return new Heart(x,y,size,col,bad);
     }
 
     randomVelocity(x) {

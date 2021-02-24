@@ -14,8 +14,8 @@ class Sword {
         }
     };
 
-    checkForSlice(fruit) {
-        if(fruit.sliced || this.swipes.length < 2) {
+    checkForSlice(heart) {
+        if(heart.sliced || this.swipes.length < 2) {
             return false;
         };
 
@@ -23,12 +23,12 @@ class Sword {
         var stroke1 = this.swipes[length - 1];
         var stroke2 = this.swipes[length - 2];
 
-        var d1 = dist(stroke1.x, stroke1.y, fruit.position.x, fruit.position.y);
-        var d2 = dist(stroke2.x, stroke2.y, fruit.position.x, fruit.position.y);
+        var d1 = dist(stroke1.x, stroke1.y, heart.position.x, heart.position.y);
+        var d2 = dist(stroke2.x, stroke2.y, heart.position.x, heart.position.y);
         var d3 = dist(stroke1.x, stroke1.y, stroke2.x, stroke2.y);
 
-        var sliced = d1 < fruit.size || ((d1 < d3 && d2 < d3) && d3 < SWORD_SIZE);
-        fruit.sliced = sliced;
+        var sliced = d1 < heart.size || ((d1 < d3 && d2 < d3) && d3 < SWORD_SIZE);
+        heart.sliced = sliced;
         return sliced;
     }
     
