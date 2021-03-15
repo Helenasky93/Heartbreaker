@@ -15,3 +15,8 @@ Some of the struggles that I faced while working on it where related to the logi
 The concept of the game is very simple, you use the pointer as a sword to break the hearts that pop up on the screen, these hearts are thrown from under and because of gravity they fall down eventually(the algorithmic work behind that was pretty complex and took a while for me to wrap my head around.) and whenever you miss a heart you lose 1 of 3 lives, which are displayed at the top right of the screen. On the other hand you also have "bad hearts" which are bright red and have a very clear black outline, if you hit one of those or you miss breaking 3 of the regular hearts, you lose the game.
 
 
+![alt-text](https://user-images.githubusercontent.com/26394899/111191287-25655d80-8575-11eb-9b9c-770bc45cbf2b.mov)
+
+
+
+
