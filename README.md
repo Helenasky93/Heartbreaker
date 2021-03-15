@@ -17,6 +17,23 @@ The concept of the game is very simple, you use the pointer as a sword to break 
 ![alt text](https://github.com/Helenasky93/Heartbreaker/blob/master/demo_1.png)
 ![alt text](https://github.com/Helenasky93/Heartbreaker/blob/master/demo_2.png)
 
+One of the biggest challenges I faced while working on the game was figuring out the physics of the heart movement. Creating a variable that represents gravity as well as determining the direction in which the fruit travels depending on what half of the screen it is drawn in from was tricky, I had to make sure that every heart that was thrown into the game had a random starting postition, the velocity was also random as it is the color of it. Fortunately p5.js has the very helpful method noise() which "Returns the Perlin noise value at specified coordinates. Perlin noise is a random sequence generator producing a more naturally ordered, harmonic succession of numbers compared to the standard random() function." The use of this method allowed me to control the "randomness" of the different elements so that It didn't become overly chaotic.
+
+```javascript
+randomHeart() {
+        var x = random(width);
+        var y = height;
+        var size = noise(frameCount) * 20 + 20;
+        var bad = (random() > BAD_HEART_PROBABILITY);
+        var r = (bad) ? 225 : 255;
+        var g = (bad) ? 0 : noise(frameCount * 2) * 255;
+        var b = (bad) ? 0 : noise(frameCount * 3) * 255;
+        var col = color(r,g,b);
+        
+        return new Heart(x,y,size,col,bad);
+    }
+ ```
+
 
 
 
